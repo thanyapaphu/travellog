@@ -139,7 +139,7 @@ export function FigmaButtonSecondary({
       className={[
         'flex h-[44px] items-center justify-center rounded-[999px] bg-[rgba(212,45,120,0.2)] px-[16px] py-[10px] transition-all duration-[600ms] ease-out',
         'text-[15.009px] font-bold text-[#d42d78]',
-        'hover:brightness-95 active:scale-[0.99]',
+        'hover:bg-[#fcb6d6] active:scale-[0.99]',
         className,
       ].join(' ')}
     >

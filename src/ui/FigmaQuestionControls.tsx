@@ -107,6 +107,31 @@ export function FigmaYesNo({
 }) {
   const yesChecked = value === 'yes'
   const noChecked = value === 'no'
+
+  function Checkbox({ checked }: { checked: boolean }) {
+    return (
+      <span className="relative inline-flex size-[24px] items-center justify-center" aria-hidden="true">
+        <span className="inline-block size-[20px] border-2 border-[#d42d78] bg-transparent" />
+        {checked && (
+          <svg
+            viewBox="0 0 24 24"
+            className="absolute left-0 top-0 size-[24px]"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 12.5L10 17L19 7.5"
+              stroke="#d42d78"
+              strokeWidth="2.5"
+              strokeLinecap="square"
+              strokeLinejoin="miter"
+            />
+          </svg>
+        )}
+      </span>
+    )
+  }
+
   return (
     <div className="flex w-full items-center gap-[8px]">
       <button
@@ -114,14 +139,7 @@ export function FigmaYesNo({
         className="flex h-[44px] w-[171px] items-center gap-[8px] py-[10px] transition-all duration-200 ease-in-out hover:opacity-90 active:scale-[0.99]"
         onClick={() => onChange('yes')}
       >
-        <span className="inline-flex size-[24px] items-center justify-center" aria-hidden="true">
-          <span
-            className={[
-              'inline-block size-[20px] border-2 border-[#d42d78]',
-              yesChecked ? 'bg-[#d42d78]' : 'bg-transparent',
-            ].join(' ')}
-          />
-        </span>
+        <Checkbox checked={yesChecked} />
         <div className="text-[15.009px] font-bold text-[#d42d78]">Yesss 100%</div>
       </button>
       <button
@@ -129,14 +147,7 @@ export function FigmaYesNo({
         className="flex h-[44px] w-[171px] items-center gap-[8px] py-[10px] transition-all duration-200 ease-in-out hover:opacity-90 active:scale-[0.99]"
         onClick={() => onChange('no')}
       >
-        <span className="inline-flex size-[24px] items-center justify-center" aria-hidden="true">
-          <span
-            className={[
-              'inline-block size-[20px] border-2 border-[#d42d78]',
-              noChecked ? 'bg-[#d42d78]' : 'bg-transparent',
-            ].join(' ')}
-          />
-        </span>
+        <Checkbox checked={noChecked} />
         <div className="text-[15.009px] font-bold text-[#d42d78]">Nope, I’m done</div>
       </button>
     </div>
