@@ -1,8 +1,7 @@
 export const FIGMA_ASSETS = {
   home: {
     cover: '/cover-custom-2.png',
-    title:
-      '/@fs/Users/newaccount/.cursor/projects/Users-newaccount-Documents-Travel-log-vibe-coding/assets/Title_Page-4fc03e41-5605-4a79-9d85-76b2774afb27.png',
+    title: '/title-page-custom.png',
   },
   icons: {
     downArrow: 'https://www.figma.com/api/mcp/asset/7394c55f-bafd-4a5f-b6f6-9b460a358f00',

@@ -10,7 +10,7 @@ function IllustrationBox({ children }: BoxProps) {
 
 // Answer 2 - Tokyo Tower
 const tokyoTowerPhoto =
-  '/@fs/Users/newaccount/.cursor/projects/Users-newaccount-Documents-Travel-log-vibe-coding/assets/tokyo_tower-69c07042-b93a-4111-9cfb-e4ce5e4618fb.png'
+  '/tokyo-tower-custom.png'
 
 export function IllustrationTokyoTower() {
   return (
@@ -22,7 +22,7 @@ export function IllustrationTokyoTower() {
 
 // Answer 2 - Yoroniku
 const yoronikuPhoto =
-  '/@fs/Users/newaccount/.cursor/projects/Users-newaccount-Documents-Travel-log-vibe-coding/assets/Property_1_yoro-ff5a9dfc-7193-468b-a2db-1516d2ce6541.png'
+  '/yoroniku-custom.png'
 
 export function IllustrationYoroniku() {
   return (
@@ -34,7 +34,7 @@ export function IllustrationYoroniku() {
 
 // Answer 3 - Sanu
 const sanuPhoto =
-  '/@fs/Users/newaccount/.cursor/projects/Users-newaccount-Documents-Travel-log-vibe-coding/assets/Property_1_Sanu-c0ed66be-5a37-4b16-8ce3-73d8903de967.png'
+  '/sanu-custom.png'
 
 export function IllustrationSanu() {
   return (
@@ -46,7 +46,7 @@ export function IllustrationSanu() {
 
 // Answer 3 - Mikuriya
 const mikuriyaPhoto =
-  '/@fs/Users/newaccount/.cursor/projects/Users-newaccount-Documents-Travel-log-vibe-coding/assets/Property_1_Mikuriya-3f7ffef9-dd4c-4db6-abc6-e41c9125b21a.png'
+  '/mikuriya-custom.png'
 
 export function IllustrationMikuriya() {
   return (
@@ -58,7 +58,7 @@ export function IllustrationMikuriya() {
 
 // Answer 4 - Tsugaike
 const tsugaikePhoto =
-  '/@fs/Users/newaccount/.cursor/projects/Users-newaccount-Documents-Travel-log-vibe-coding/assets/Property_1_tsugaike-b44323b5-8a8c-4ae2-9740-f92b212623b8.png'
+  '/tsugaike-custom.png'
 
 export function IllustrationTsugaike() {
   return (
@@ -70,7 +70,7 @@ export function IllustrationTsugaike() {
 
 // Answer 4 - Earthboat
 const earthboatPhoto =
-  '/@fs/Users/newaccount/.cursor/projects/Users-newaccount-Documents-Travel-log-vibe-coding/assets/Property_1_Earthboat-4dbcf582-c63c-4b2f-a1df-f0f3a4619ce7.png'
+  '/earthboat-custom.png'
 
 export function IllustrationEarthboat() {
   return (
