@@ -114,11 +114,14 @@ export function FigmaYesNo({
         className="flex h-[44px] w-[171px] items-center gap-[8px] py-[10px] transition-all duration-200 ease-in-out hover:opacity-90 active:scale-[0.99]"
         onClick={() => onChange('yes')}
       >
-        <img
-          src={yesChecked ? FIGMA_ASSETS.icons.checkboxYes : FIGMA_ASSETS.icons.checkboxNo}
-          alt=""
-          className="size-[24px]"
-        />
+        <span className="inline-flex size-[24px] items-center justify-center" aria-hidden="true">
+          <span
+            className={[
+              'inline-block size-[20px] border-2 border-[#d42d78]',
+              yesChecked ? 'bg-[#d42d78]' : 'bg-transparent',
+            ].join(' ')}
+          />
+        </span>
         <div className="text-[15.009px] font-bold text-[#d42d78]">Yesss 100%</div>
       </button>
       <button
@@ -126,11 +129,14 @@ export function FigmaYesNo({
         className="flex h-[44px] w-[171px] items-center gap-[8px] py-[10px] transition-all duration-200 ease-in-out hover:opacity-90 active:scale-[0.99]"
         onClick={() => onChange('no')}
       >
-        <img
-          src={noChecked ? FIGMA_ASSETS.icons.checkboxYes : FIGMA_ASSETS.icons.checkboxNo}
-          alt=""
-          className="size-[24px]"
-        />
+        <span className="inline-flex size-[24px] items-center justify-center" aria-hidden="true">
+          <span
+            className={[
+              'inline-block size-[20px] border-2 border-[#d42d78]',
+              noChecked ? 'bg-[#d42d78]' : 'bg-transparent',
+            ].join(' ')}
+          />
+        </span>
         <div className="text-[15.009px] font-bold text-[#d42d78]">Nope, I’m done</div>
       </button>
     </div>
