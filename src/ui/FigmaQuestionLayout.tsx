@@ -26,7 +26,7 @@ export function FigmaQuestionLayout({
                   onError={() => setTitleImgFailed(true)}
                 />
               ) : (
-                <div className="text-[42px] font-black uppercase tracking-wide text-[#d42d78]">
+                <div className="text-[55px] font-black uppercase tracking-wide text-[#d42d78]">
                   {titleFallback ?? 'Travel Log'}
                 </div>
               )}
