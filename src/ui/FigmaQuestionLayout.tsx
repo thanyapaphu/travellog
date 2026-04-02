@@ -15,7 +15,7 @@ export function FigmaQuestionLayout({
   return (
     <FigmaScreen>
       <div className="relative h-[798px] w-[402px] max-w-full">
-        <div className="absolute left-[26px] top-[79px] w-[350px]">
+        <div className="absolute left-1/2 top-[79px] w-[350px] max-w-full -translate-x-1/2">
           <div className="flex flex-col items-center gap-[36px]">
             <div className="flex h-[80.61px] items-center justify-center">
               {titleImg && !titleImgFailed ? (
@@ -31,7 +31,7 @@ export function FigmaQuestionLayout({
                 </div>
               )}
             </div>
-            <div className="w-[350px]">{children}</div>
+            <div className="w-[350px] max-w-full">{children}</div>
           </div>
         </div>
       </div>

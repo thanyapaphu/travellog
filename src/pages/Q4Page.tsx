@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { useTrip } from '../trip/store'
 import type { Q4Place } from '../trip/types'
+import { FIGMA_ASSETS } from '../ui/FigmaAssets'
 import { FigmaButton } from '../ui/figmaPrimitives'
 import { FigmaDropdown, FigmaFeelBox, FigmaYesNo } from '../ui/FigmaQuestionControls'
 import { FigmaQuestionLayout } from '../ui/FigmaQuestionLayout'
@@ -19,7 +20,7 @@ export function Q4Page() {
     (state.q4.goBack === 'yes' || state.q4.goBack === 'no')
 
   return (
-    <FigmaQuestionLayout titleFallback="Hakuba">
+    <FigmaQuestionLayout titleImg={FIGMA_ASSETS.titles.hakuba} titleFallback="Hakuba">
       <div className="flex w-full flex-col gap-[24px]">
         <div className="flex w-full flex-col gap-[8px]">
           <div className="text-[15.806px] font-bold text-[#d42d78]">
