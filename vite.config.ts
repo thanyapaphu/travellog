@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
-  // Repo name is "travellog" for GitHub Pages URL path
-  base: command === 'build' ? '/travellog/' : '/',
+  // Use repo subpath only on GitHub Actions (Pages); use root for Vercel/local.
+  base: command === 'build' && process.env.GITHUB_ACTIONS ? '/travellog/' : '/',
   plugins: [react()],
   server: {
     fs: {
