@@ -6,7 +6,7 @@ export function FigmaQuestionLayout({
   titleFallback,
   children,
 }: {
-  titleImg: string
+  titleImg?: string
   titleFallback?: string
   children: ReactNode
 }) {
@@ -18,7 +18,7 @@ export function FigmaQuestionLayout({
         <div className="absolute left-[26px] top-[79px] w-[350px]">
           <div className="flex flex-col items-center gap-[36px]">
             <div className="flex h-[80.61px] items-center justify-center">
-              {!titleImgFailed ? (
+              {titleImg && !titleImgFailed ? (
                 <img
                   src={titleImg}
                   alt=""
