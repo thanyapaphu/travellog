@@ -20,7 +20,7 @@ export function Q2Page() {
     (state.q2.goBack === 'yes' || state.q2.goBack === 'no')
 
   return (
-    <FigmaQuestionLayout titleImg={FIGMA_ASSETS.titles.tokyo}>
+    <FigmaQuestionLayout titleImg={FIGMA_ASSETS.titles.tokyo} titleFallback="Tokyo">
       <div className="flex w-full flex-col gap-[24px]">
         <div className="flex w-full flex-col gap-[8px]">
           <div className="text-[15.806px] font-bold text-[#d42d78]">

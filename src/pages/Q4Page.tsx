@@ -20,7 +20,7 @@ export function Q4Page() {
     (state.q4.goBack === 'yes' || state.q4.goBack === 'no')
 
   return (
-    <FigmaQuestionLayout titleImg={FIGMA_ASSETS.titles.hakuba}>
+    <FigmaQuestionLayout titleImg={FIGMA_ASSETS.titles.hakuba} titleFallback="Hakuba">
       <div className="flex w-full flex-col gap-[24px]">
         <div className="flex w-full flex-col gap-[8px]">
           <div className="text-[15.806px] font-bold text-[#d42d78]">
