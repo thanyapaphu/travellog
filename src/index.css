@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-[#FCE1E2] text-[#d42d78];
+    margin: 0;
+    font-family: 'Courier Prime', ui-monospace, SFMono-Regular, Menlo, Monaco,
+      Consolas, 'Liberation Mono', 'Courier New', monospace;
+  }
+}
+
+@layer components {
+  .page-dissolve {
+    animation: page-dissolve 300ms ease-out both;
+  }
+  .tl-card {
+    @apply rounded-[20px] bg-[#FFF7F7] shadow-[0px_5px_14px_rgba(0,0,0,0.15)];
+  }
+  .tl-label {
+    @apply text-[15.8px] font-bold text-[#d42d78];
+  }
+  .tl-input {
+    @apply w-full rounded-[8px] bg-white px-4 py-[10px] text-[16px] font-bold text-black outline-none placeholder:text-black/40;
+  }
+  .tl-textarea {
+    @apply w-full rounded-[8px] bg-white px-4 py-[10px] text-[16px] font-bold text-black outline-none placeholder:text-black/40;
+  }
+  .tl-button {
+    @apply inline-flex h-[44px] items-center justify-center rounded-[999px] bg-[#d42d78] px-4 py-[10px] text-[15px] font-bold text-white active:translate-y-px disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .tl-button-secondary {
+    @apply inline-flex h-[44px] items-center justify-center rounded-[999px] bg-white px-4 py-[10px] text-[15px] font-bold text-[#d42d78] shadow-[0px_5px_14px_rgba(0,0,0,0.08)] active:translate-y-px;
+  }
+  .tl-checkbox-btn {
+    @apply inline-flex h-[44px] w-[171px] items-center gap-2 rounded-[999px] py-[10px] text-left;
+  }
+  .tl-checkbox-icon {
+    @apply inline-flex size-6 items-center justify-center;
+  }
+}
+
+@keyframes page-dissolve {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
