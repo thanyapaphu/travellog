@@ -11,9 +11,9 @@ export const FIGMA_ASSETS = {
     checkboxNo: 'https://www.figma.com/api/mcp/asset/a99bfa07-6c22-44a2-8df1-e09c9a23aaa2',
   },
   titles: {
-    tokyo: `${baseUrl}title-tokyo.png`,
-    karuizawa: `${baseUrl}title-karuizawa.png`,
-    hakuba: `${baseUrl}title-hakuba.png`,
+    tokyo: `${baseUrl}title-tokyo.svg`,
+    karuizawa: `${baseUrl}title-karuizawa.svg`,
+    hakuba: `${baseUrl}title-hakuba.svg`,
   },
   end: {
     centerStamp: 'https://www.figma.com/api/mcp/asset/d3e7bd21-f801-4e5e-a461-c59322d673ec',
