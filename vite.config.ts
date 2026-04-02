@@ -2,7 +2,9 @@ import { defineConfig, searchForWorkspaceRoot } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // Repo name is "travellog" for GitHub Pages URL path
+  base: command === 'build' ? '/travellog/' : '/',
   plugins: [react()],
   server: {
     fs: {
@@ -14,4 +16,4 @@ export default defineConfig({
       ],
     },
   },
-})
+}))
