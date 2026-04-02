@@ -1,7 +1,9 @@
+const baseUrl = import.meta.env.BASE_URL
+
 export const FIGMA_ASSETS = {
   home: {
-    cover: '/cover-custom-2.png',
-    title: '/title-page-custom.png',
+    cover: `${baseUrl}cover-custom-2.png`,
+    title: `${baseUrl}title-page-custom.png`,
   },
   icons: {
     downArrow: 'https://www.figma.com/api/mcp/asset/7394c55f-bafd-4a5f-b6f6-9b460a358f00',

@@ -1,3 +1,5 @@
+const baseUrl = import.meta.env.BASE_URL
+
 type BoxProps = { children: React.ReactNode }
 
 function IllustrationBox({ children }: BoxProps) {
@@ -10,7 +12,7 @@ function IllustrationBox({ children }: BoxProps) {
 
 // Answer 2 - Tokyo Tower
 const tokyoTowerPhoto =
-  '/tokyo-tower-custom.png'
+  `${baseUrl}tokyo-tower-custom.png`
 
 export function IllustrationTokyoTower() {
   return (
@@ -22,7 +24,7 @@ export function IllustrationTokyoTower() {
 
 // Answer 2 - Yoroniku
 const yoronikuPhoto =
-  '/yoroniku-custom.png'
+  `${baseUrl}yoroniku-custom.png`
 
 export function IllustrationYoroniku() {
   return (
@@ -34,7 +36,7 @@ export function IllustrationYoroniku() {
 
 // Answer 3 - Sanu
 const sanuPhoto =
-  '/sanu-custom.png'
+  `${baseUrl}sanu-custom.png`
 
 export function IllustrationSanu() {
   return (
@@ -46,7 +48,7 @@ export function IllustrationSanu() {
 
 // Answer 3 - Mikuriya
 const mikuriyaPhoto =
-  '/mikuriya-custom.png'
+  `${baseUrl}mikuriya-custom.png`
 
 export function IllustrationMikuriya() {
   return (
@@ -58,7 +60,7 @@ export function IllustrationMikuriya() {
 
 // Answer 4 - Tsugaike
 const tsugaikePhoto =
-  '/tsugaike-custom.png'
+  `${baseUrl}tsugaike-custom.png`
 
 export function IllustrationTsugaike() {
   return (
@@ -70,7 +72,7 @@ export function IllustrationTsugaike() {
 
 // Answer 4 - Earthboat
 const earthboatPhoto =
-  '/earthboat-custom.png'
+  `${baseUrl}earthboat-custom.png`
 
 export function IllustrationEarthboat() {
   return (
