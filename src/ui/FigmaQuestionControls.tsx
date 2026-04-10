@@ -51,7 +51,7 @@ export function FigmaDropdown<T extends string>({
         <ChevronDown
           className={[
             'size-[16px] shrink-0 text-black transition-transform duration-300 ease-in-out',
-            open ? 'scale-y-100' : '-scale-y-100',
+            open ? '-scale-y-100' : 'scale-y-100',
           ].join(' ')}
         />
       </button>
