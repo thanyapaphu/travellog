@@ -1,4 +1,5 @@
-import { FIGMA_ASSETS } from './FigmaAssets'
+const coverImg =
+  'https://www.figma.com/api/mcp/asset/fa8fa837-f65d-49a6-91f1-85c18d74cce8'
 
 export function LogbookIllustration({ name }: { name: string }) {
   return (
@@ -6,7 +7,7 @@ export function LogbookIllustration({ name }: { name: string }) {
       <div className="relative h-[551px] w-[305.184px] max-w-full">
         <div className="absolute left-1/2 top-[25px] h-[355px] w-[255px] -translate-x-1/2 overflow-hidden bg-[#d42d78]">
           <img
-            src={FIGMA_ASSETS.home.cover}
+            src={coverImg}
             alt=""
             className="absolute left-[-21.79px] top-[-26.2px] h-[397.539px] w-[298.154px] object-cover"
           />

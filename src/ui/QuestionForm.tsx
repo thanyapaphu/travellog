@@ -1,12 +1,7 @@
 type Option<T extends string> = { label: string; value: T }
 
-function SelectChevron({ className }: { className?: string }) {
-  return (
-    <svg className={className} width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
-      <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  )
-}
+const arrowImg =
+  'https://www.figma.com/api/mcp/asset/1cbb21ff-d944-4586-a817-1f2e9af2d37a'
 
 function CheckboxIcon({ checked }: { checked: boolean }) {
   return (
@@ -80,7 +75,11 @@ export function QuestionForm<TPlace extends string>({
               </option>
             ))}
           </select>
-          <SelectChevron className="pointer-events-none absolute right-4 top-1/2 size-4 -translate-y-1/2 text-[#d42d78]" />
+          <img
+            src={arrowImg}
+            alt=""
+            className="pointer-events-none absolute right-4 top-1/2 size-4 -translate-y-1/2"
+          />
         </div>
       </div>
 
