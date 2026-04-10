@@ -1,4 +1,9 @@
-const baseUrl = import.meta.env.BASE_URL
+import earthboatPhoto from '../assets/trip-photos/earthboat-custom.png?url'
+import mikuriyaPhoto from '../assets/trip-photos/mikuriya-custom.png?url'
+import sanuPhoto from '../assets/trip-photos/sanu-custom.png?url'
+import tokyoTowerPhoto from '../assets/trip-photos/tokyo-tower-custom.png?url'
+import tsugaikePhoto from '../assets/trip-photos/tsugaike-custom.png?url'
+import yoronikuPhoto from '../assets/trip-photos/yoroniku-custom.png?url'
 
 type BoxProps = { children: React.ReactNode }
 
@@ -11,9 +16,6 @@ function IllustrationBox({ children }: BoxProps) {
 }
 
 // Answer 2 - Tokyo Tower
-const tokyoTowerPhoto =
-  `${baseUrl}tokyo-tower-custom.png`
-
 export function IllustrationTokyoTower() {
   return (
     <IllustrationBox>
@@ -23,9 +25,6 @@ export function IllustrationTokyoTower() {
 }
 
 // Answer 2 - Yoroniku
-const yoronikuPhoto =
-  `${baseUrl}yoroniku-custom.png`
-
 export function IllustrationYoroniku() {
   return (
     <IllustrationBox>
@@ -35,9 +34,6 @@ export function IllustrationYoroniku() {
 }
 
 // Answer 3 - Sanu
-const sanuPhoto =
-  `${baseUrl}sanu-custom.png`
-
 export function IllustrationSanu() {
   return (
     <IllustrationBox>
@@ -47,9 +43,6 @@ export function IllustrationSanu() {
 }
 
 // Answer 3 - Mikuriya
-const mikuriyaPhoto =
-  `${baseUrl}mikuriya-custom.png`
-
 export function IllustrationMikuriya() {
   return (
     <IllustrationBox>
@@ -59,9 +52,6 @@ export function IllustrationMikuriya() {
 }
 
 // Answer 4 - Tsugaike
-const tsugaikePhoto =
-  `${baseUrl}tsugaike-custom.png`
-
 export function IllustrationTsugaike() {
   return (
     <IllustrationBox>
@@ -71,9 +61,6 @@ export function IllustrationTsugaike() {
 }
 
 // Answer 4 - Earthboat
-const earthboatPhoto =
-  `${baseUrl}earthboat-custom.png`
-
 export function IllustrationEarthboat() {
   return (
     <IllustrationBox>

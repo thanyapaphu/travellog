@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224" height="90" viewBox="0 0 224 90" fill="none">
+  <ellipse cx="112" cy="45" rx="105" ry="38" stroke="#d42d78" stroke-width="3" fill="none" opacity="0.9"/>
+  <ellipse cx="112" cy="45" rx="92" ry="28" stroke="#d42d78" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <text x="112" y="42" text-anchor="middle" fill="#d42d78" font-family="system-ui, sans-serif" font-size="14" font-weight="700">TRIP COMPLETE</text>
+  <text x="112" y="58" text-anchor="middle" fill="#d42d78" font-family="system-ui, sans-serif" font-size="10" font-weight="600" opacity="0.85">Japan Mar 2026</text>
+</svg>

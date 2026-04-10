@@ -1,6 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import type { GoBackAnswer } from '../trip/types'
-import { FIGMA_ASSETS } from './FigmaAssets'
+function ChevronDown({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
+      <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
 
 export function FigmaDropdown<T extends string>({
   value,
@@ -41,11 +47,9 @@ export function FigmaDropdown<T extends string>({
         onClick={() => setOpen((prev) => !prev)}
       >
         <span className="truncate text-left">{visibleLabel}</span>
-        <img
-          src={FIGMA_ASSETS.icons.downArrow}
-          alt=""
+        <ChevronDown
           className={[
-            'size-[16px] shrink-0 transition-transform duration-300 ease-in-out',
+            'size-[16px] shrink-0 text-black transition-transform duration-300 ease-in-out',
             open ? 'scale-y-100' : '-scale-y-100',
           ].join(' ')}
         />
